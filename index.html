@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHome Control - 2ª Série B</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="logo_sesi.png" alt="Logo SESI" class="logo-fiep">
+            <div class="header-title">
+                <h1>SmartHome <span>Control</span></h1>
+                <p>2ª Série B - Campo Largo</p>
+            </div>
+            <div class="header-spacer"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="monitoramento">
+            <div class="info-card">
+                <div class="info-icon">🌡️</div>
+                <div class="info-content">
+                    <span class="label">Temperatura Interna</span>
+                    <h2 id="display-temp">22°C</h2>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">⚡</div>
+                <div class="info-content">
+                    <span class="label">Consumo de Energia</span>
+                    <h2>145 kWh</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="dispositivos-grid">
+            
+            <article class="card" id="card-luz">
+                <div class="card-icon">💡</div>
+                <h3>Luz da Sala</h3>
+                <p class="status">Desligado</p>
+                <button class="btn-toggle">Alternar</button>
+            </article>
+
+            <article class="card active" id="card-ar">
+                <div class="card-icon">❄️</div>
+                <h3>Ar Condicionado</h3>
+                <p class="status">Ligado - 20°C</p>
+                <button class="btn-toggle">Alternar</button>
+            </article>
+
+            <article class="card" id="card-seguranca">
+                <div class="card-icon">🛡️</div>
+                <h3>Segurança</h3>
+                <p class="status">Monitorando (4 Câmeras)</p>
+                <button class="btn-action">Ver Câmera</button>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SESI SENAI Campo Largo - Curso de Desenvolvimento de Sistemas</p>
+        <p><small>Orgulhosamente apresentado pela 2ª Série B</small></p>
+    </footer>
+
+</body>
+</html>
